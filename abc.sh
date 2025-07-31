@@ -3,4 +3,4 @@ echo "Date     : $(date)"
 echo "User     : $(whoami)"
 echo " Disk use"
 df -kh /
-du -kh /var/lib/jenkins
+echo " build should be run every 2 min"
