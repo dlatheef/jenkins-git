@@ -1,46 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Welcome to Ladsoft Technologies </title>
-    <style>
-        body {
-            background-color: #f2f2f2;
-            font-family: Arial, sans-serif;
-            text-align: center;
-            padding-top: 80px;
-        }
-        h1 {
-            color: #333;
-            font-size: 36px;
-        }
-        p {
-            color: #555;
-            font-size: 20px;
-        }
-        ul {
-            list-style-type: none;
-            padding: 0;
-            margin-top: 30px;
-        }
-        li {
-            font-size: 18px;
-            color: #444;
-            margin-bottom: 10px;
-        }
-    </style>
+    <title>Load Balancer Demo</title>
 </head>
-<body>
+<body style="text-align:center; font-family:Arial;">
     <h1>Welcome to Ladsoft Technologies</h1>
-    <p>Bangalore</p>
-    <p>Hyderabad</p>
-    <p>Chennai</p>
-    
-    <h2>Courses We Offer:</h2>
-    <ul>
-        <li>AWS Cloud Training</li>
-        <li>Terraform Infrastructure as Code</li>
-        <li>Microsoft Azure Cloud</li>
-    </ul>
+    <h2>This request was served by:</h2>
+    <p><strong>Hostname:</strong> <?php echo gethostname(); ?></p>
+    <p><strong>Server IP:</strong> <?php echo $_SERVER['SERVER_ADDR']; ?></p>
+    <p><strong>Client IP:</strong> <?php echo $_SERVER['REMOTE_ADDR']; ?></p>
 </body>
 </html>
+
+
+echo "<h1>Server Details</h1><p><strong></strong></p>"
